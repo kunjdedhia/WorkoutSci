@@ -96,6 +96,8 @@ gx = data.iloc[:,3]
 gy = data.iloc[:,4]
 gz = data.iloc[:,5]
 
+# complementary filter
+
 for i in range(0, len(ax), 1):
     angleX = angleX + math.degrees(gx[i] * 0.04347826086)
     angleY = angleY + math.degrees(gy[i] * 0.04347826086)
@@ -178,6 +180,8 @@ scatter(array(max)[:,0], array(max)[:,1], color='blue')
 scatter(array(min)[:,0], array(min)[:,1], color='red')
 show()
 
+# plotting fused sensor data
+
 plt.figure("Angle X")
 plt.plot(listX)
 plt.figure("Angle Y")
@@ -186,6 +190,8 @@ plt.figure("Angle Z")
 plt.plot(listZ)
 
 plt.show()
+
+# plotting raw sensor data
 
 # plt.figure("x axis acc")
 # plt.plot(ax)
