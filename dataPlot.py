@@ -124,6 +124,7 @@ print min
 
 # remove small variations
 # calculate rom
+
 if len(max) != len(min):
     for i in range(0, len(max) - 1, 1):
         sample = sample + abs(max[i][0] - min[i][0])
@@ -180,7 +181,7 @@ scatter(array(max)[:,0], array(max)[:,1], color='blue')
 scatter(array(min)[:,0], array(min)[:,1], color='red')
 show()
 
-# plotting fused sensor data
+# plotting sensor fused data on all axis
 
 plt.figure("Angle X")
 plt.plot(listX)
